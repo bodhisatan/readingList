@@ -2,12 +2,10 @@ package com.bodhisatan.readinglist;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "t_book")
 @Data
 public class Book {
     @Id
