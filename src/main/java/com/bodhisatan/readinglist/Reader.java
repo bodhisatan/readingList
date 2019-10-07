@@ -6,11 +6,13 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Arrays;
 import java.util.Collection;
 
 @Entity
 // 表明这是一个JPA实体
+@Table(name = "t_user")
 public class Reader implements UserDetails {
     private static final long serialVersionUID = 1L;
 
